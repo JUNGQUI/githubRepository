@@ -1,0 +1,4 @@
+baseURL = "https://jungqui.github.io/"
+languageCode = "en-us"
+title = "QUEUEZ DEV LOG - TITLE"
+theme = "paper"
