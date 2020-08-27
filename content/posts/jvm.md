@@ -4,7 +4,7 @@ date: 2020-08-27T10:59:24+09:00
 draft: false
 ---
 
-# JVM, GC 그리고 thread
+# JVM 과 GC
 
 ## JVM?
 Java Virtual Machine 의 약자로 말 그대로 java 를 돌리기 위해 가상으로 Computer 의 자원을 가진
@@ -94,8 +94,14 @@ Class loader 를 통해 적재된 class 들을 실질적으로 실행하는 engi
 >
 >이 부분에 대해서는 GC 가 연관되어 있기 때문에 GC 관련된 글 작성 시 자세히 설명 하려 한다. 우선 간단하게 설명하자면,
 >
->permanent : 전체 code 에 대한 method 나 class 의 meta data 가 저장되는 공간. 
->그렇기 때문에 Reflection 이 자주 일어나는 spring 의 경우 이 부분에 대한 관리가 중요하다.
+>~~permanent : 전체 code 에 대한 method 나 class 의 meta data 가 저장되는 공간.~~ 
+>~~그렇기 때문에 Reflection 이 자주 일어나는 spring 의 경우 이 부분에 대한 관리가 중요하다.~~
+>
+>Java 8 이후 부터 permanent 의 경우 Native memory 의 meta space 로 대체되었다.
+>
+>대체된 이유로는 heap 이 아니라 사실상 전체 code 에 대한 meta data 가 주로 이루어져 있었기 때문에 Heap 이 아닌 OS 에 위임하는게 맞다고 생각해서 라고 한다.
+>
+>또한 이와 같은 방식으로 memory 관리를 할 경우 heap 에 강제되는 memory 가 없어지기 때문에 heap 은 이전보다 더 많은 자원을 할당받아 사용 할 수 있게 되었다.
 >
 >eden : 변수 생성 시 최초 저장되는 공간
 >
