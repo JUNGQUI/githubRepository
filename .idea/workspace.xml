@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="0ea976d4-c49f-4e36-876d-47137f817a77" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/posts/gc.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/gc.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/posts/jvm.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/jvm.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,11 +50,19 @@
       <updated>1598490970493</updated>
       <workItem from="1598490975369" duration="7105000" />
       <workItem from="1598859114471" duration="187000" />
-      <workItem from="1598859812454" duration="4470000" />
+      <workItem from="1598859812454" duration="4621000" />
+      <workItem from="1598960789456" duration="235000" />
+      <workItem from="1598961713919" duration="621000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="417" y="91" key="CommitChangelistDialog2" timestamp="1598864311585">
+      <screen x="0" y="23" width="1680" height="986" />
+    </state>
+    <state x="417" y="91" key="CommitChangelistDialog2/0.23.1680.986@0.23.1680.986" timestamp="1598864311585" />
   </component>
 </project>
