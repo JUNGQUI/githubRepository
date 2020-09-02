@@ -42,6 +42,13 @@ process 가 program의 단위라면 thread 는 process 의 단위이다.
 process 가 program 을 실행 시 OS 로부터 각기 다른 자원을 할당 받는 반면, thread 의 경우 work 를 위해 process 내의 공유 자원을 이용해서 처리를 하기 때문에
 context-switching 이 일어나지 않는다.
 
+## 넘어가기 전
+
+사실 process 와 jvm 을 공부하면서 이게 뭔 소리인가 싶은 부분이 있었다. process 가 일을 하는 단위고, process 내의 task 단위가 thread 라 하였는데, jvm 은 또 그럼 무엇이며 그 안의 thread 는 또 무엇인가.
+
+이 부분에 대해 굉장히 헤매었는데 단정적으로 결론 짓자면 `InstanceOf process == InstanceOf JVM ? "긍정" : "부정"` 이라는 것이다.
+Java program 을 실행 시 OS 와 상관 없이 돌릴 수 있는 것이 JVM 인데, 이것이 Program 을 돌리는 process 역할을 한다. 그러나 완벽하게 동일한 구성으로 기능하지 않기 때문에 같진 않지만 '비슷하다' 라고 이야기 할 수 있을 것 같다.
+
 ## 왜 알아야 하나?
 Java 가 ~~(전 Java 진영이기 때문에)~~ 아무리 resource 에 대해 처리를 잘해준다고 하더라도 그게 곧 resource 구성에 대해 `몰라도 된다` 는 아니다.
 오히려 그렇기 때문에 더 잘 알아야 하고 어떤 기술이 있는지, 왜 쓰는지에 대해 알아야 적재적소에 기술을 배치 할 수 있다.
@@ -59,35 +66,42 @@ Java 가 ~~(전 Java 진영이기 때문에)~~ 아무리 resource 에 대해 처
 process 는 `code`, `data`, `stack`, `heap` 의 영역으로 나뉘어져 있고, 다른 process 에 대해 접근할 경우 pipe, socket 통신 등의 방법을 이용해서
 접근해야 해당 자원에 대해 접근 할 수 있다.
 
+괄호의 부분이 JVM 과 mapping 이 되는 개념이라고 보면 된다.
+
 - code
->말 그대로 code. 이 부분은 개발자가 직접 작성한 code 외에도 기계어로 이루어진 code 들 또한 들어가 있다.
 
-- data
->data 영역, 이 부분은 global, static 변수 등이 포함되어 있으며, 주의해야 할 점은 local variable 은 이곳에 저장되지 않는다는 점이다.
->
->그 이유는[...](https://www.google.com/search?q=%EC%82%AC%EB%9E%8C%EC%9D%84+%ED%99%94%EB%82%98%EA%B2%8C+%ED%95%98%EB%8A%94+%EB%B0%A9%EB%B2%95+%EB%91%90%EA%B0%80%EC%A7%80&source=lmns&bih=922&biw=1680&client=safari&hl=ko&sa=X&ved=2ahUKEwjMlYLXg8XrAhVZx4sBHcohBcgQ_AUoAHoECAEQAA)
+말 그대로 code. 이 부분은 개발자가 직접 작성한 code 외에도 기계어로 이루어진 code 들 또한 들어가 있다.
 
-- stack
->loacl 변수에 대한 저장소이다. 위 data 에서 local 에 대해 저장하지 않는다고 이야기한 이유가 여기에 있다. 
->
->global, static 변수와 다르게 관리하는 곳이 있는 이유는
->local 의 경우 해당 method 가 끝나고 나서는 다시는 쓰이지 않을 ~~다시 쓰여도 초기화되서 쓰일~~ 변수들이기 때문에 memory를 별도의 동적인 영역으로 만들어 유동적으로 사용하기 위함이다.
+- data (method area)
+
+data 영역, 이 부분은 global, static 변수 등이 포함되어 있으며, 주의해야 할 점은 local variable 은 이곳에 저장되지 않는다는 점이다.
+
+[그 이유는...](https://www.google.com/search?q=%EC%82%AC%EB%9E%8C%EC%9D%84+%ED%99%94%EB%82%98%EA%B2%8C+%ED%95%98%EB%8A%94+%EB%B0%A9%EB%B2%95+%EB%91%90%EA%B0%80%EC%A7%80&source=lmns&bih=922&biw=1680&client=safari&hl=ko&sa=X&ved=2ahUKEwjMlYLXg8XrAhVZx4sBHcohBcgQ_AUoAHoECAEQAA)
+
+- stack (jvm stack)
+
+local 변수에 대한 저장소이다. 위 data 에서 local 에 대해 저장하지 않는다고 이야기한 이유가 여기에 있다. 
+
+global, static 변수와 다르게 관리하는 곳이 있는 이유는
+local 의 경우 해당 method 가 끝나고 나서는 다시는 쓰이지 않을 ~~다시 쓰여도 초기화되서 쓰일~~ 변수들이기 때문에 memory를 별도의 동적인 영역으로 만들어 유동적으로 사용하기 위함이다.
 
 - heap
->size 가 정해지지 않은 list 와 같이 동적인 memory 가 저장되는 곳이다. 이 또한 stack 과 마찬가지로 동적으로 사용하기 위해 별도로 구성되었는데,
->stack 과도 따로 관리가 되는 이유는
->
->stack 은 휘발성으로 한번 사용하고 끝내는 정적 data 이지만 list 와 같은 경우 포인터의 개념으로 주소지에 접근하기 때문에
->memory 가 동적으로 관리되어야 했고 이를 위해 별도로 공간을 만들되, 더 이상 참조되지 않는 순간 주기적으로 GC 가 날리는 형식으로 발전하게 되었다.
+
+size 가 정해지지 않은 list 와 같이 동적인 memory 가 저장되는 곳이다. 이 또한 stack 과 마찬가지로 동적으로 사용하기 위해 별도로 구성되었는데,
+stack 과도 따로 관리가 되는 이유는
+
+stack 은 휘발성으로 한번 사용하고 끝내는 정적 data 이지만 list 와 같은 경우 포인터의 개념으로 주소지에 접근하기 때문에
+memory 가 동적으로 관리되어야 했고 이를 위해 별도로 공간을 만들되, 더 이상 참조되지 않는 순간 주기적으로 GC 가 날리는 형식으로 발전하게 되었다.
 
 ### Thread
 
 이미 앞서 말했듯이 thread 는 process 내의 자원을 공유한다. 고로 구성 자체는 비슷하다. 다만 thread 만 독자적으로 가지는 영역이 있는데 그게 바로 stack 이다.
 
 간단히 생각해보자. code, data(global, static variable), heap(memory address) 의 경우 process 내에서 꾸준히 호출되는 (혹은 호출될 가능성이 있는)
-뇨속들 뿐이다. 이 값들에 대해 각 thread 별로 별도로 가져간다면 context-switching 때문에 multi-thread 구성을 가져가야 할 이유가 1도 없다.
+녀석들 뿐이다. 이 값들에 대해 각 thread 별로 별도로 가져간다면 context-switching 때문에 multi-thread 구성을 가져가야 할 이유가 1도 없다.
 
-따라서 이 부분들에 대해서는 각 thread 별로 process의 자원을 공유하고, 이후 각 thread 가 실행하는 method 가 각기 다를 수 있기 때문에 local 변수를 의미하는 stack의 경우만이 thread 별로 별도로 생성된다.
+따라서 이 부분들에 대해서는 각 thread 별로 process의 자원을 공유하고, 이후 각 thread 가 실행하는 method 가 각기 다를 수 있기 때문에
+local 변수를 의미하는 stack의 경우만이 thread 별로 별도로 생성된다.
 
 ## 그래서?
 
