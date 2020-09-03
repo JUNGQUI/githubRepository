@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0ea976d4-c49f-4e36-876d-47137f817a77" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/config.toml" beforeDir="false" afterPath="$PROJECT_DIR$/config.toml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/images/dedsec.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/posts/lock.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/lock.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +60,7 @@
       <workItem from="1598859812454" duration="4621000" />
       <workItem from="1598960789456" duration="235000" />
       <workItem from="1598961713919" duration="12534000" />
-      <workItem from="1599094188206" duration="8113000" />
+      <workItem from="1599094188206" duration="15910000" />
     </task>
     <servers />
   </component>
