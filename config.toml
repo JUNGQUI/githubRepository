@@ -1,4 +1,86 @@
+#baseURL = "https://jungqui.github.io/"
+#languageCode = "en-us"
+#title = "QUEUEZ DEV LOG"
+#theme = "paper"
+#[taxonomies]
+#tag = "tags"
+#category = "categories"
+
 baseURL = "https://jungqui.github.io/"
-languageCode = "en-us"
+languageCode = "en"
+DefaultContentLanguage = "en"
 title = "QUEUEZ DEV LOG"
-theme = "paper"
+theme = "anatole"
+summarylength = 10
+enableEmoji = true
+enableRobotsTXT = true
+
+[taxonomies]
+tag = "tags"
+category = "categories"
+
+# Enable Disqus
+#disqusShortname = ""
+
+# Google Analytics
+#googleAnalytics = "UA-123-45"
+
+[params]
+title = "QUEUEZ DEV LOG"
+author = "QUEUEZ"
+description = "지식을 큐처럼 습득하며 살아가고 싶은 개발자입니다."
+profilePicture = "resources/images/de"
+keywords = "resources/images/dedsec.png"
+favicon = "favicons/"
+customCss = []
+customJs = []
+mainSections = ["posts"]
+images = ["images/site-feature-image.png"]
+
+## Math settings
+[params.math]
+enable = false  # options: true, false. Enable math support globally, default: false. You can always enable math on per page.
+use = "katex"  # options: "katex", "mathjax". default is "katex".
+
+## Social links
+#[[params.socialIcons]]
+#icon = "fa-linkedin"
+#title = "Linkedin"
+#url = "https://de.linkedin.com/"
+
+[[params.socialIcons]]
+icon = "fa-github"
+title = "GitHub"
+url = "https://github.com/JUNGQUI"
+
+#[[params.socialIcons]]
+#icon = "fa-instagram"
+#title = "instagram"
+#url = "https://www.instagram.com/"
+#
+#[[params.socialIcons]]
+#icon = "fa-envelope"
+#title = "e-mail"
+#url = "mailto:mail@alexbilz.com"
+
+## Menu items
+
+[menu]
+
+[[menu.main]]
+name = "Home"
+identifier = "home"
+weight = 100
+url = "/"
+
+[[menu.main]]
+name = "Posts"
+weight = 200
+identifier = "posts"
+url = "/posts/"
+
+[[menu.main]]
+name = "About"
+weight = 300
+identifier = "about"
+url = "/about/"

@@ -2,11 +2,10 @@
 title: "ProcessNthread"
 date: 2020-08-31T16:32:43+09:00
 draft: false
+tags: ["programming"]
 ---
 
-# Process 와 thread
-
-## Program? Process? Thread?
+#### Program? Process? Thread?
 
 ### Program
 다음은 나무 위키에서의 program 에 대한 정의 중 일부 발췌문이다.

@@ -2,9 +2,8 @@
 title: "Jvm"
 date: 2020-08-27T10:59:24+09:00
 draft: false
+tags: ["programming"]
 ---
-
-# JVM 과 GC
 
 ## JVM?
 Java Virtual Machine 의 약자로 말 그대로 java 를 돌리기 위해 가상으로 Computer 의 자원을 가진
@@ -84,7 +83,7 @@ method 내에서 사용된 thread 나 method 에 대한 정보, return value, �
 
 - Method area(static 영역)
 
-class 에 대한 정보, static 변수 및 method, 
+class 에 대한 정보, static 변수 및 method, 변수의 type 등이 저장되는 영역이다.
 뿐만 아니라 변수들의 참조 값과 class 가 interface 인지 아닌지 등도 같이 관리하게 된다.
 class 혹은 그와 관련된 정보들을 다룬다. static 변수, Enum 상수 등 memory 에 올라가서 사용 가능한 부분이 바로 이 부분에 해당한다.
 

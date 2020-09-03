@@ -2,9 +2,9 @@
 title: "Static"
 date: 2020-09-01T20:47:06+09:00
 draft: false
+tags: ["programming", "java"]
 ---
 
-# static
 ## static?
 보통 '정적' 이라는 단어가 붙어 있는 case 가 있는데 정적 variable, 정적 method 을 지칭한다.
 
