@@ -11,6 +11,9 @@ tags: ["programming", "java"]
 정적 이라는 말에서 알 수 있듯이 선언 직후 변하지 않는 값을 표현할 때 static 을 사용한다.
 비슷한 의미로 final 이 있는데, final 은 `immutable` 속성을 가지고 있는 것이고 static 은 `고정적인` 의 속성을 가지고 있다고 보면 된다.
 
+> 참고로 final 에는 한 가지 허점이 있는데 List 와 같은 object 를 final 로 선언 후 add 를 할 경우 변경이 가능하다. 이는 remove 또한 마찬가지 인데, 이럴 경우 `immutable` 속성이
+>깨졌다고 볼 수 있다.
+
 참고로 `enum class` 를 확인해보면 ~~java 가 아니라 class~~ 선언된 enum 이 static final 로 선언되어 있는 것을 알 수 있다.
 
 static 의 경우 변경을 가하면 변하지만 final 의 경우 초기화 이후엔 값이 변하지 않기 때문에 두 가지를 조합하여 사용하면 application 이 올라가져 있는 상태에서 독립적으로 존재 (static)
