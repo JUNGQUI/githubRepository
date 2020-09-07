@@ -28,7 +28,7 @@ category = "categories"
 [params]
 title = "QUEUEZ DEV LOG"
 author = "QUEUEZ"
-description = "지식을 큐처럼 습득하며 살아가고 싶은 개발자입니다."
+description = "배울게 너무 많아 항상 부족함을 느끼는 개발자입니다."
 profilePicture = "images/dedsec.png"
 keywords = ""
 favicon = "favicons/"
