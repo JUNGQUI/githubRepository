@@ -136,7 +136,7 @@ List<String> comp4 = lang.stream().sorted(
 
 - 반환
 
-[Reduction doc](https://docs.oracle.com/javase/8/docs/api/?java/util/stream/Stream.html) 을 보면 `전체 stream 에 대해 반복되는 연산을 통해 하나의 결과로 도출 시키는 method` 라
+[Stream doc](https://docs.oracle.com/javase/8/docs/api/?java/util/stream/Stream.html) 내에 `reduction` 부분을 보면 `전체 stream 에 대해 반복되는 연산을 통해 하나의 결과로 도출 시키는 method` 라
 설명하고 있다. 그리고 이러한 reduction 에 포함되는 method 는 reduce 와 collect 로 구성되어 있다.
 
 #### reduce
