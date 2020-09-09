@@ -2,6 +2,7 @@
 title: "Stream"
 date: 2020-09-08T15:07:43+09:00
 draft: true
+tags: ["programming", "java"]
 ---
 
 ## Stream?
