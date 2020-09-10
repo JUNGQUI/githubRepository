@@ -31,7 +31,7 @@ tags: ["programming", "java"]
 
 - synchronized 방식
 
-```
+``` java
 public synchronized void checkSync(String threadId) {
     System.out.println("JK Thread in (synchronized) : " + threadId);
 }
@@ -39,7 +39,7 @@ public synchronized void checkSync(String threadId) {
 
 - Reentrant Lock 방식
 
-```
+``` java
 ReentrantLock reentrantLock = new ReentrantLock();
 
 public void checkReentrantLock(String threadId) {

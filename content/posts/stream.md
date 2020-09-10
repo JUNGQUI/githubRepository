@@ -25,7 +25,7 @@ lambda 와 마찬가지로 이 또한 함수형으로 간결하게 그리고 in-
 
 우선 실행하기에 앞서 생성이 되어야 하니 생성을 해야 한다.
 
-```
+``` java
 // builder pattern
 Stream<String> builderStream = Stream.<String>builder()
                 .add("A").add("B").add("C")
@@ -62,7 +62,7 @@ stream 으로 생성이 된 후에 데이터에 대해 연산을 수행하는 �
 
 말 그대로 filter 를 걸어서 조건에 맞는 element 만 뽑아내어 stream 으로 연산을 하는 작업이다.
 
-```
+``` java
 Stream<String> stream = lang.stream()
                             .filter(langName -> langName.contains("a"));
 ```
@@ -71,7 +71,7 @@ Stream<String> stream = lang.stream()
 
 #### iterator
 
-```
+``` java
 // [15, 17, 19, 21, 23]
 Stream<Integer> iteratedStream = Stream.iterate(15, n -> n + 2).limit(5);
 ```
@@ -84,7 +84,7 @@ limit 를 통해 크기를 제한해줘야 한다.
 map 에서는 비로소 여러가지 직접적인 조작이 가능해진다. 예컨데 받은 값에 추가로 어떤 조작을 가하고 return 해주거나, 특정 조건의 값만 받아서 조작을 가한 후 return 하는 등
 주로 쓰이는 기능 ~~(본인은 그렇다)~~ 이다.
 
-```
+``` java
 // [1, 2, 3, 4]
 IntStream intStream = IntStream.range(1, 5);
 
@@ -106,7 +106,7 @@ IntStream newIntStreamThree = intStream
 
 정렬 연산이다. 기본적으로는 오름차순 배열이며 comparator 재정의를 통해 조작도 가능하다.
 
-```
+``` java
 List<String> lang = Arrays.asList(
                 "Java", "Scala", "Groovy", "Python", "Go", "Swift"
         );
@@ -144,7 +144,7 @@ List<String> comp4 = lang.stream().sorted(
 
 sum, max, min 등의 연산 작업을 수행하는 method 이다. 초기에 초기 값을 설정할 수 있고 재정의하여 lambda expression 으로 구현할 수 있다.
 
-```
+``` java
 // [1, 2, 3, 4]
 IntStream intStream = IntStream.range(1, 5);
 List<Integer> newintCollections = intStream.boxed()
@@ -173,7 +173,7 @@ int identityInteger = newintCollections.stream().reduce(
 
 앞서 사용했던 code 를 다시 한번 보자면
 
-```
+``` java
 List<String> lang = Arrays.asList(
                 "Java", "Scala", "Groovy", "Python", "Go", "Swift"
         );
@@ -215,7 +215,7 @@ java 7에서 diamond operator 가 생겼기 때문에 list 안의 type 에 대�
 가장 중요한 특징이라 할 수 있는데, stream 은 data 를 담아두고 재사용하는 목적으로 개발된 API 가 **아니다.** 그렇기 때문에 한번이라도 연산이 끝났다면 다시 사용할 수 없다.
 연산이 종료되는 순간 해당 stream 이 닫히기 때문이다.
 
-```
+``` java
 // 각 요소 반복 시 print
 intStream.forEach(System.out::println);
 // 위에서 반복 후 stream close 되었기에 접근 시 InvocationTargetException 발생

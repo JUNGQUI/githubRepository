@@ -51,7 +51,7 @@ java 에서 함수를 일급 컬렉션으로 쓰고자 하는 목적이였으니
 
 이때 등장하는게 functional interface 인데, interface class 이면서 method 가 하나만 있는 interface 를 functional interface 라고 한다.
 
-```
+``` java
 @FunctionalInterface
 public interface JKLambda {
     String stringConcat(String s1, String s2);
@@ -62,7 +62,7 @@ public interface JKLambda {
 
 lambda 가 없을 경우는 아래와 같은 방식으로 구현해서 사용해야 했다.
 
-```
+``` java
 JKLambda jkLambda = new JKLambda() {
     @Override
     public String stringConcat(String s1, String s2) {
@@ -73,7 +73,7 @@ JKLambda jkLambda = new JKLambda() {
 
 그러나 lambda expression 을 사용하면 아래와 같이 심플하게 구현이 가능하다.
 
-```
+``` java
 JKLambda jKlambda = (a, b) -> a + " " + b + " JK lambda, use lambda";
 ```
 
@@ -81,7 +81,7 @@ JKLambda jKlambda = (a, b) -> a + " " + b + " JK lambda, use lambda";
 
 또한 iterate 상황에 대해서도 심플하게 구현이 가능하다.
 
-```
+``` java
 List<String> list=new ArrayList<>();
 list.add("1");
 list.add("2");
