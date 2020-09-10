@@ -1,7 +1,7 @@
 ---
 title: "Lambda"
 date: 2020-09-07T13:38:49+09:00
-draft: false
+draft: true
 tags: ["programming", "java"]
 ---
 

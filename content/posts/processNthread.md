@@ -1,7 +1,7 @@
 ---
 title: "ProcessNthread"
 date: 2020-08-31T16:32:43+09:00
-draft: false
+draft: true
 tags: ["programming"]
 ---
 

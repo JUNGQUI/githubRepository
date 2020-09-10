@@ -3,9 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="0ea976d4-c49f-4e36-876d-47137f817a77" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/posts/gc.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/gc.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/posts/jvm.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/jvm.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/content/posts/lambda.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/lambda.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/content/posts/lock.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/lock.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/posts/stream.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/stream.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/posts/processNthread.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/processNthread.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/posts/static.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/static.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/posts/transaction.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/transaction.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,7 +41,7 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
@@ -68,7 +72,7 @@
       <workItem from="1599446401815" duration="12236000" />
       <workItem from="1599539913693" duration="14327000" />
       <workItem from="1599624559280" duration="110000" />
-      <workItem from="1599704272224" duration="4149000" />
+      <workItem from="1599704272224" duration="15263000" />
     </task>
     <servers />
   </component>
@@ -76,18 +80,18 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="304" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1599457275705">
+    <state x="304" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1599721235990">
       <screen x="0" y="23" width="1680" height="986" />
     </state>
-    <state x="304" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1680.986@0.23.1680.986" timestamp="1599457275705" />
+    <state x="304" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1680.986@0.23.1680.986" timestamp="1599721235990" />
     <state x="417" y="91" key="CommitChangelistDialog2" timestamp="1599704323756">
       <screen x="0" y="23" width="1680" height="986" />
     </state>
     <state x="417" y="91" key="CommitChangelistDialog2/0.23.1680.986@0.23.1680.986" timestamp="1599704323756" />
-    <state x="341" y="155" key="SettingsEditor" timestamp="1599457315261">
+    <state x="341" y="155" key="SettingsEditor" timestamp="1599721234331">
       <screen x="0" y="23" width="1680" height="986" />
     </state>
-    <state x="341" y="155" key="SettingsEditor/0.23.1680.986@0.23.1680.986" timestamp="1599457315261" />
+    <state x="341" y="155" key="SettingsEditor/0.23.1680.986@0.23.1680.986" timestamp="1599721234331" />
     <state x="100" y="123" width="1480" height="786" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1599107450815">
       <screen x="0" y="23" width="1680" height="986" />
     </state>
@@ -96,9 +100,9 @@
       <screen x="0" y="23" width="1680" height="986" />
     </state>
     <state x="538" y="271" width="678" height="490" key="find.popup/0.23.1680.986@0.23.1680.986" timestamp="1599619315249" />
-    <state x="477" y="240" width="725" height="676" key="search.everywhere.popup" timestamp="1599707733193">
+    <state x="477" y="240" width="725" height="676" key="search.everywhere.popup" timestamp="1599719498902">
       <screen x="0" y="23" width="1680" height="986" />
     </state>
-    <state x="477" y="240" width="725" height="676" key="search.everywhere.popup/0.23.1680.986@0.23.1680.986" timestamp="1599707733193" />
+    <state x="477" y="240" width="725" height="676" key="search.everywhere.popup/0.23.1680.986@0.23.1680.986" timestamp="1599719498902" />
   </component>
 </project>

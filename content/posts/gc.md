@@ -1,7 +1,7 @@
 ---
 title: "Gc"
 date: 2020-08-27T13:30:14+09:00
-draft: false
+draft: true
 tags: ["programming"]
 ---
 

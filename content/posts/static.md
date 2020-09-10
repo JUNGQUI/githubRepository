@@ -1,7 +1,7 @@
 ---
 title: "Static"
 date: 2020-09-01T20:47:06+09:00
-draft: false
+draft: true
 tags: ["programming", "java"]
 ---
 

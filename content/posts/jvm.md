@@ -1,7 +1,7 @@
 ---
 title: "Jvm"
 date: 2020-08-27T10:59:24+09:00
-draft: false
+draft: true
 tags: ["programming"]
 ---
 
