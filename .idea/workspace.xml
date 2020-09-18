@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="0ea976d4-c49f-4e36-876d-47137f817a77" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/posts/querydsl.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/querydsl.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,7 +38,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Java" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -67,7 +68,7 @@
       <workItem from="1599624559280" duration="110000" />
       <workItem from="1599704272224" duration="15379000" />
       <workItem from="1600058187940" duration="7184000" />
-      <workItem from="1600261835903" duration="5316000" />
+      <workItem from="1600261835903" duration="10324000" />
     </task>
     <servers />
   </component>
@@ -83,10 +84,10 @@
       <screen x="0" y="23" width="1680" height="986" />
     </state>
     <state x="417" y="91" key="CommitChangelistDialog2/0.23.1680.986@0.23.1680.986" timestamp="1599704323756" />
-    <state x="341" y="155" key="SettingsEditor" timestamp="1599721234331">
+    <state x="341" y="155" key="SettingsEditor" timestamp="1600437241612">
       <screen x="0" y="23" width="1680" height="986" />
     </state>
-    <state x="341" y="155" key="SettingsEditor/0.23.1680.986@0.23.1680.986" timestamp="1599721234331" />
+    <state x="341" y="155" key="SettingsEditor/0.23.1680.986@0.23.1680.986" timestamp="1600437241612" />
     <state x="100" y="123" width="1480" height="786" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1599107450815">
       <screen x="0" y="23" width="1680" height="986" />
     </state>
