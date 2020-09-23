@@ -20,7 +20,31 @@ java 개발자들에겐 복잡한 query 를 생각하지 않고 진행하면 된
 다만 이럼에도 불구하고 이렇게 사용할 경우 String 을 통해 query 를 만들기 때문에
 
 1. 가독성 저하, co-op 어려움
-2. build 시가 아닌 application 구동 후 해당 method 호출 시 error 확인 가능
+2. type-safe 하지 않음
+
+> #### Type-safe?
+>
+>비논리적 계산이 `합리적으로 계산이 가능 할 때` 계산을 할 때 Type-safe 하지 **않** 다고 한다.
+>예를 들어 보자.
+>
+>```javascript
+>console.log('print 4 time ' * 4)
+>>NaN
+>```
+>javascript 의 경우 이와 같이 NaN 이 출력될지언정 입력 시엔 (compile) 아무런 반응이 없다.
+>
+>반면, java 의 경우
+>
+>```java
+>System.out.println("It Must Print 4 time " * 4);
+>```
+>
+>단번에 compile error 가 발생한다.
+>
+>이처럼 runtime 시 error 가 발생하는 경우 type-safe 하지 않고
+>compile 시점 시 error 가 발생하는 경우 type-safe 하다고 판단한다.
+>
+>비슷한 개념으로 checked Exception 과 unchecked exception 이 있다.
 
 이러한 단점이 있다.
 

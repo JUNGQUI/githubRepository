@@ -113,6 +113,10 @@ extend type Query {
 이와 같이 작성하면 된다. 이렇게 쉽게 작성이 가능하고 controller url mapping 없이 object 구조와 gql 정의만으로도 service 접근이 가능하기 때문에
 front-end 개발자가 gql 을 관리하고 back-end 개발자는 해당 spec 을 통해 service 를 만들어 제공해주는 식으로 개발을 진행 할 수 있다.
 
+이와 같은 점이 앞서 말했듯이 test 용 controller 를 생성하는 기존 방식보다 훨씬 효과적이라 볼 수 있는게, business logic 을 service 에 다 만들고
+난 후에 unit test 를 통해 service 를 검증 한 뒤 controller 에 또 추가 logic (validation 등)을 구성하고 다시 controller test 를 진행해야 하는
+전통적인 controller 방식보다 더 개발하기 쉽다고 볼 수 있다.
+
 완성된 Query gql 의 경우 다음과 같다.
 
 ```graphql
@@ -127,6 +131,7 @@ extend type Query {
     findById(id: ID): GqlUserInformation
 }
 ```
+
 
 ## 그래서?
 
