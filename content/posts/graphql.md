@@ -2,7 +2,7 @@
 title: "Graphql"
 date: 2020-09-21T20:58:34+09:00
 draft: true
-tags: ["DB", "query", "language"]
+tags: ["DB", "query"]
 ---
 
 ## graphQL?
