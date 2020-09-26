@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="0ea976d4-c49f-4e36-876d-47137f817a77" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/posts/graphql.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/graphql.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +72,8 @@
       <workItem from="1600777425820" duration="434000" />
       <workItem from="1600777892578" duration="7568000" />
       <workItem from="1600863170368" duration="3995000" />
-      <workItem from="1601000414897" duration="5232000" />
+      <workItem from="1601000414897" duration="5323000" />
+      <workItem from="1601112154056" duration="12701000" />
     </task>
     <servers />
   </component>
@@ -105,9 +105,9 @@
       <screen x="0" y="23" width="1680" height="986" />
     </state>
     <state x="538" y="271" width="678" height="490" key="find.popup/0.23.1680.986@0.23.1680.986" timestamp="1601000589879" />
-    <state x="477" y="240" width="725" height="676" key="search.everywhere.popup" timestamp="1599719498902">
+    <state x="477" y="240" width="725" height="676" key="search.everywhere.popup" timestamp="1601127160562">
       <screen x="0" y="23" width="1680" height="986" />
     </state>
-    <state x="477" y="240" width="725" height="676" key="search.everywhere.popup/0.23.1680.986@0.23.1680.986" timestamp="1599719498902" />
+    <state x="477" y="240" width="725" height="676" key="search.everywhere.popup/0.23.1680.986@0.23.1680.986" timestamp="1601127160562" />
   </component>
 </project>
