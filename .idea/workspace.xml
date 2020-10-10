@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0ea976d4-c49f-4e36-876d-47137f817a77" name="Default Changelist" comment="" />
+    <list default="true" id="0ea976d4-c49f-4e36-876d-47137f817a77" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -73,6 +75,7 @@
       <workItem from="1601000414897" duration="5323000" />
       <workItem from="1601112154056" duration="12802000" />
       <workItem from="1602241501618" duration="4619000" />
+      <workItem from="1602303304948" duration="6046000" />
     </task>
     <servers />
   </component>
@@ -100,10 +103,10 @@
       <screen x="0" y="23" width="1680" height="986" />
     </state>
     <state x="100" y="123" width="1480" height="786" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.23.1680.986@0.23.1680.986" timestamp="1599107450815" />
-    <state x="538" y="271" width="678" height="490" key="find.popup" timestamp="1602242190693">
+    <state x="538" y="271" width="678" height="490" key="find.popup" timestamp="1602303377179">
       <screen x="0" y="23" width="1680" height="986" />
     </state>
-    <state x="538" y="271" width="678" height="490" key="find.popup/0.23.1680.986@0.23.1680.986" timestamp="1602242190693" />
+    <state x="538" y="271" width="678" height="490" key="find.popup/0.23.1680.986@0.23.1680.986" timestamp="1602303377179" />
     <state x="477" y="240" width="725" height="676" key="search.everywhere.popup" timestamp="1601127160562">
       <screen x="0" y="23" width="1680" height="986" />
     </state>
