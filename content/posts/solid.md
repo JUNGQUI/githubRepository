@@ -181,7 +181,7 @@ public class B extends A {
 
 이 원칙은 큰 하나의 interface 내의 대량의 method 를 구현하는 방식보단 하나의 interface 내에 하나의 method 형식으로 잘개 쪼개는 원칙을 의미한다.
 
-어찌 보면 SRP 가 적용되는 것으로 보일 수 있는데 대표적인 ISP interface 는 functional interface 라고 볼 수 있다.
+어찌 보면 SRP 가 적용되는 것으로 보일 수 있는데 대표적인 ISP 가 적용된 부분은 [functional interface](https://jungqui.github.io/posts/lambda/) 라고 볼 수 있다.
 
 가령 위의 계산기 code 를 다시 보자면 private 형식으로 하나의 class 에 녹여낸 부분을 각 사칙연산별로 4개의 interface 로 구성하고 각 로직의 책임은 각 interface가 지는 식으로
 구성할 경우 ISP 원칙이 적용되었다 볼 수 있다.
@@ -240,7 +240,7 @@ public class contextMethodA implements DIPInterface {
   }
 }
 
-public class contextMethodB {
+public class contextMethodB implements DIPInterface {
   public void methodA() {
     System.out.println("changed business logic method called");
   }
