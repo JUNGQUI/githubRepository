@@ -24,3 +24,4 @@ Object Oriented Programming 의 앞 글자를 따서 만든 준말이다.
 ## 그래서?
 
 
+참고는 [여기](https://woowabros.github.io/study/2016/07/07/think_object_oriented.html) 
