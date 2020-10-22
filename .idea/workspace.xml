@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0ea976d4-c49f-4e36-876d-47137f817a77" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/static/images/reflection/field_getType.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/reflection/filed_getAnntation.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -25,7 +27,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/static/images/reflection" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -41,6 +43,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/static/images/reflection" />
       <recent name="$PROJECT_DIR$/static" />
       <recent name="$PROJECT_DIR$/content/programing" />
     </key>
@@ -79,7 +82,8 @@
       <workItem from="1602508646523" duration="3349000" />
       <workItem from="1603024206983" duration="1788000" />
       <workItem from="1603111904666" duration="4456000" />
-      <workItem from="1603196804344" duration="3968000" />
+      <workItem from="1603196804344" duration="4157000" />
+      <workItem from="1603286775667" duration="5911000" />
     </task>
     <servers />
   </component>
@@ -107,13 +111,13 @@
       <screen x="0" y="23" width="1680" height="986" />
     </state>
     <state x="100" y="123" width="1480" height="786" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.23.1680.986@0.23.1680.986" timestamp="1599107450815" />
-    <state x="538" y="271" width="678" height="490" key="find.popup" timestamp="1602303377179">
+    <state x="538" y="271" width="678" height="490" key="find.popup" timestamp="1603291354322">
       <screen x="0" y="23" width="1680" height="986" />
     </state>
-    <state x="538" y="271" width="678" height="490" key="find.popup/0.23.1680.986@0.23.1680.986" timestamp="1602303377179" />
-    <state x="477" y="240" width="725" height="676" key="search.everywhere.popup" timestamp="1601127160562">
+    <state x="538" y="271" width="678" height="490" key="find.popup/0.23.1680.986@0.23.1680.986" timestamp="1603291354322" />
+    <state x="477" y="240" width="725" height="676" key="search.everywhere.popup" timestamp="1603374144572">
       <screen x="0" y="23" width="1680" height="986" />
     </state>
-    <state x="477" y="240" width="725" height="676" key="search.everywhere.popup/0.23.1680.986@0.23.1680.986" timestamp="1601127160562" />
+    <state x="477" y="240" width="725" height="676" key="search.everywhere.popup/0.23.1680.986@0.23.1680.986" timestamp="1603374144572" />
   </component>
 </project>
