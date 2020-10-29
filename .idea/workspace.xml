@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="0ea976d4-c49f-4e36-876d-47137f817a77" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/posts/cleancode.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/cleancode.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +84,7 @@
       <workItem from="1603196804344" duration="4157000" />
       <workItem from="1603286775667" duration="6000000" />
       <workItem from="1603457839444" duration="5271000" />
-      <workItem from="1603810563162" duration="4189000" />
+      <workItem from="1603810563162" duration="8796000" />
     </task>
     <task id="LOCAL-00001" summary="2020-10-27&#10;&#10;- clean code init">
       <created>1603810705713</created>
@@ -138,9 +139,9 @@
       <screen x="0" y="23" width="1680" height="986" />
     </state>
     <state x="538" y="271" width="678" height="490" key="find.popup/0.23.1680.986@0.23.1680.986" timestamp="1603291354322" />
-    <state x="477" y="240" width="725" height="676" key="search.everywhere.popup" timestamp="1603810623951">
+    <state x="477" y="240" width="725" height="676" key="search.everywhere.popup" timestamp="1603980628814">
       <screen x="0" y="23" width="1680" height="986" />
     </state>
-    <state x="477" y="240" width="725" height="676" key="search.everywhere.popup/0.23.1680.986@0.23.1680.986" timestamp="1603810623951" />
+    <state x="477" y="240" width="725" height="676" key="search.everywhere.popup/0.23.1680.986@0.23.1680.986" timestamp="1603980628814" />
   </component>
 </project>
