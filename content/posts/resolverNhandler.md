@@ -13,55 +13,57 @@ tags: ["programming", "java"]
 
 > - view resolver?
 >
->spring mvc 에서 data flow 를 보면 화면을 보여주는 과정이
+>spring mvc 에서 data flow 를 보면
 >
 >client -> Dispatcher Servlet -> HandlerMapping -> Controller -> Dispatcher Servlet -> view resolver -> client
 >
->와 같이 진행 되는데, D.S 에서 HandlerMapping 을 통해 server 내 url 에 mapping 을 해주고 이와 같은 과정을 통해
->controller 와 연결이 된다.
+>와 같이 진행 되는데, Dispatcher Servlet 이 client 로부터 들어온 url request 를 분석하고, HandlerMapping 이 전달받은 URL 을 application 내에서
+>URL 을 mapping 해준다.
 >
->이후 controller 내에서 비즈니스 로직을 수행하고 화면을 보여줘야 할 경우 view resolver 를 통해 client 에게 화면을 제공해준다.
+>이러한 일련의 과정이 Handler 가 mapping 을 해주는 역할을 수행하고 결과적으로 controller 와 연결이 된다.
+>
+>이후 controller 내에서 비즈니스 로직을 수행하고 화면을 보여줘야 할 경우 view resolver 를 통해 지정된 format 에 맞게 화면 path 를 찾아간다.
 
 ## 왜 알아야 하나?
 
-그냥 내가 알고 싶어서(...) 진행한다. 사실 개발하면서 resolver 를 순수 구축해서 사용하는 등의 경우가 왕왕 있었는데, 정확하게 resolver 나 handler, helper 등에 대해
-정의가 머릿속에 없어서 정리할 겸 진행하기로 했다.
+그냥 내가 알고 싶어서(...) 진행한다. 사실 개발하면서 어떠한 의미로든 resolver 나 handler 를 순수 구축해서 사용하는 등의 경우가 왕왕 있었는데, 
+정확하게 resolver 나 handler, helper 등에 대해 정의가 머릿속에 없어서 정리할 겸 진행하기로 했다.
 
 ## 구성
 
-사실 마땅찮은 구성은 없다. 구현하기에 따라 이름 붙이기에 따라 resolver, handler, helper 등을 사용하는 것 같은데, 가장 예시를 들기 좋은게 spring mvc 의 resolver 라
-spring mvc 를 기준으로 작성한다.
+사실 마땅찮은 구성은 없다. 구현하기에 따라 이름 붙이기에 따라 resolver, handler, helper 등을 사용하는 것 같은데, 
+가장 예시를 들기 좋은게 spring mvc 의 resolver 라 spring mvc view resolver 를 기준으로 작성한다.
 
-spring boot 에서 thymeleaf template 사용 시 ThymeleafViewResolver 가 기본적으로 view resolver 역할을 한다. ~~아마도~~
+spring boot 에서 thymeleaf template 사용 시 ThymeleafViewResolver 가 기본적으로 view resolver 역할을 한다.
 
 ```java
-...
-// html return 시 string return 으로 redirect: 를 지정하듯이 resolver 가 지정해준다.
-public static final String REDIRECT_URL_PREFIX = "redirect:";
+public class viewResolverConfig_가칭 {
+    // html return 시 string return 으로 redirect: 를 지정하듯이 resolver 가 지정해준다.
+
+    public static final String REDIRECT_URL_PREFIX = "redirect:";
+    public static final String FORWARD_URL_PREFIX = "forward:";
     
-public static final String FORWARD_URL_PREFIX = "forward:";
-
-private boolean redirectContextRelative = true;
-private boolean redirectHttp10Compatible = true;
-
-private boolean alwaysProcessRedirectAndForward = true;
-
-private boolean producePartialOutputWhileProcessing = AbstractThymeleafView.DEFAULT_PRODUCE_PARTIAL_OUTPUT_WHILE_PROCESSING;
-
-// viewClass 로 ThymeleafView.class 를 지정해준다. 이를 통해 Thymeleaf template 에 맞는 화면들을 render 할 수 있다.
-private Class<? extends AbstractThymeleafView> viewClass = ThymeleafView.class;   
-private String[] viewNames = null;
-private String[] excludedViewNames = null;
-private int order = Integer.MAX_VALUE;
-
-
-private final Map<String, Object> staticVariables = new LinkedHashMap<String, Object>(10);
-private String contentType = null;
-private boolean forceContentType = false;
-private String characterEncoding = null;
-
-private ISpringTemplateEngine templateEngine;
-...
+    private boolean redirectContextRelative = true;
+    private boolean redirectHttp10Compatible = true;
+    
+    private boolean alwaysProcessRedirectAndForward = true;
+    
+    private boolean producePartialOutputWhileProcessing = AbstractThymeleafView.DEFAULT_PRODUCE_PARTIAL_OUTPUT_WHILE_PROCESSING;
+    
+    // viewClass 로 ThymeleafView.class 를 지정해준다. 이를 통해 Thymeleaf template 에 맞는 화면들을 render 할 수 있다.
+    private Class<? extends AbstractThymeleafView> viewClass = ThymeleafView.class;   
+    private String[] viewNames = null;
+    private String[] excludedViewNames = null;
+    private int order = Integer.MAX_VALUE;
+    
+    
+    private final Map<String, Object> staticVariables = new LinkedHashMap<String, Object>(10);
+    private String contentType = null;
+    private boolean forceContentType = false;
+    private String characterEncoding = null;
+    
+    private ISpringTemplateEngine templateEngine;
+}
 ```
 
 아주 잠깐 살펴보고 바로 이해할 수 있는 부분들은 resolver 는 개발자들이 실제로 신경써서 개발해야 하는 static 한 설정들에 대해
