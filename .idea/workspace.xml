@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0ea976d4-c49f-4e36-876d-47137f817a77" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/static/images/requestBody/requestBodyPOST.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/requestParam/requestParamGET.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/posts/resolverNhandler.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/resolverNhandler.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,6 +47,10 @@
       <recent name="$PROJECT_DIR$/static" />
       <recent name="$PROJECT_DIR$/content/programing" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/static/images/requestBody" />
+      <recent name="$PROJECT_DIR$/static/images/requestParam" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
@@ -85,7 +90,8 @@
       <workItem from="1603286775667" duration="6000000" />
       <workItem from="1603457839444" duration="5271000" />
       <workItem from="1603810563162" duration="14891000" />
-      <workItem from="1607147154577" duration="1295000" />
+      <workItem from="1607147154577" duration="4742000" />
+      <workItem from="1607217051655" duration="3804000" />
     </task>
     <task id="LOCAL-00001" summary="2020-10-27&#10;&#10;- clean code init">
       <created>1603810705713</created>
@@ -110,40 +116,5 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="2020-10-27&#10;&#10;- clean code init" />
     <option name="LAST_COMMIT_MESSAGE" value="2020-10-27&#10;&#10;- clean code init" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="304" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1599721235990">
-      <screen x="0" y="23" width="1680" height="986" />
-    </state>
-    <state x="304" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1680.986@0.23.1680.986" timestamp="1599721235990" />
-    <state x="528" y="259" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1600777583274">
-      <screen x="0" y="23" width="1680" height="986" />
-    </state>
-    <state x="528" y="259" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.23.1680.986@0.23.1680.986" timestamp="1600777583274" />
-    <state x="417" y="91" key="CommitChangelistDialog2" timestamp="1603811068718">
-      <screen x="0" y="23" width="1680" height="986" />
-    </state>
-    <state x="417" y="91" key="CommitChangelistDialog2/0.23.1680.986@0.23.1680.986" timestamp="1603811068718" />
-    <state x="341" y="155" key="SettingsEditor" timestamp="1600437241612">
-      <screen x="0" y="23" width="1680" height="986" />
-    </state>
-    <state x="341" y="155" key="SettingsEditor/0.23.1680.986@0.23.1680.986" timestamp="1600437241612" />
-    <state x="440" y="256" key="Vcs.Push.Dialog.v2" timestamp="1603811071948">
-      <screen x="0" y="23" width="1680" height="986" />
-    </state>
-    <state x="440" y="256" key="Vcs.Push.Dialog.v2/0.23.1680.986@0.23.1680.986" timestamp="1603811071948" />
-    <state x="100" y="123" width="1480" height="786" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1599107450815">
-      <screen x="0" y="23" width="1680" height="986" />
-    </state>
-    <state x="100" y="123" width="1480" height="786" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.23.1680.986@0.23.1680.986" timestamp="1599107450815" />
-    <state x="538" y="271" width="678" height="490" key="find.popup" timestamp="1607147428728">
-      <screen x="0" y="25" width="1680" height="978" />
-    </state>
-    <state x="538" y="271" width="678" height="490" key="find.popup/0.23.1680.986@0.23.1680.986" timestamp="1604324575997" />
-    <state x="538" y="271" width="678" height="490" key="find.popup/0.25.1680.978@0.25.1680.978" timestamp="1607147428728" />
-    <state x="477" y="240" width="725" height="676" key="search.everywhere.popup" timestamp="1603980628814">
-      <screen x="0" y="23" width="1680" height="986" />
-    </state>
-    <state x="477" y="240" width="725" height="676" key="search.everywhere.popup/0.23.1680.986@0.23.1680.986" timestamp="1603980628814" />
   </component>
 </project>
